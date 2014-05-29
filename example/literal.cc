@@ -8,9 +8,9 @@ int main()
 {
   auto foo = JSON({
     "hello": "world",
-    "data": [0, null, ["hello", "goodbye"]],
+    "data": [0, null, ["hello", "goodbye"]], // <-- comments are nice
     "quote": {
-      "O'Connor": "everything that rises must converge",
+      "O'Connor": "everything that rises must converge", // <-- very forgiving :)
     }
   });
 

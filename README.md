@@ -18,9 +18,9 @@ int main()
 {
   auto foo = JSON({
     "hello": "world",
-    "data": [0, null, ["hello", "goodbye"]],
+    "data": [0, null, ["hello", "goodbye"]], // <-- comments are nice
     "quote": {
-      "O'Connor": "everything that rises must converge",
+      "O'Connor": "everything that rises must converge", // <- very forgiving :)
     }
   });
 
@@ -28,13 +28,20 @@ int main()
 }
 ```
 
+Or just pass a string in
+```
+auto foo = JSON(my_json_string);
+cout << foo;
+```
+
 # INCLUDE
 just include the header file
 
-# COMPILE
+# COMPILE EXAMPLE
 Just link to the built binary (or modify and rebuild yourself).
 
 ```bash
+cd example
 g++ -o literal ./literal.cc -std=c++1y ./deps/json/lib/libjsoncpp.a
 ```
 

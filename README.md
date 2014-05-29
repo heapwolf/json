@@ -1,5 +1,5 @@
 # SYNOPSIS
-JSON in Javascript is easy, not such much in C++. This wrapper makes
+JSON in Javascript is easy, not so much in C++. This wrapper makes
 working with JSON in C++ simple. Read the code.
 
 # DESCRIPTION

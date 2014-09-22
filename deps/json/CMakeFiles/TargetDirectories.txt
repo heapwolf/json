@@ -1,5 +1,0 @@
-/Users/paolofragomeni/workroot/git/hij1nx/friendly/deps/json/src/jsontestrunner/CMakeFiles/jsoncpp_check.dir
-/Users/paolofragomeni/workroot/git/hij1nx/friendly/deps/json/src/lib_json/CMakeFiles/jsoncpp_lib.dir
-/Users/paolofragomeni/workroot/git/hij1nx/friendly/deps/json/src/jsontestrunner/CMakeFiles/jsoncpp_readerwriter_tests.dir
-/Users/paolofragomeni/workroot/git/hij1nx/friendly/deps/json/src/test_lib_json/CMakeFiles/jsoncpp_test.dir
-/Users/paolofragomeni/workroot/git/hij1nx/friendly/deps/json/src/jsontestrunner/CMakeFiles/jsontestrunner_exe.dir

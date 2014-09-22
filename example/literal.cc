@@ -10,10 +10,12 @@ int main()
     "hello": "world",
     "data": [0, null, ["hello", "goodbye"]], // <-- comments are nice
     "quote": {
-      "O'Connor": "everything that rises must converge", // <-- very forgiving :)
+      "O'Connor": "everything that rises must converge" // <-- very forgiving :)
     }
   });
 
-  cout << foo["quote"]["O'Connor"];
+  cout << foo.dump() << endl;
+  cout << foo["hello"].string_value() << endl;
+  cout << foo["quote"]["O'Connor"].string_value() << endl;
 }
 

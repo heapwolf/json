@@ -1,9 +1,5 @@
 # SYNOPSIS
-JSON in Javascript is easy, not so much in C++. This wrapper makes
-working with JSON in C++ simple. Read the code.
-
-# DESCRIPTION
-expands a macro to a variadic function that binds a json parser
+a tiny helper for using dropbox's json11 parser. because constructing json in C++ is ugly.
 
 # EXAMPLE
 
@@ -14,24 +10,24 @@ expands a macro to a variadic function that binds a json parser
 using namespace std;
 using namespace JSON;
 
-int main()
-{
+int main() {
+
   auto foo = JSON({
     "hello": "world",
-    "data": [0, null, ["hello", "goodbye"]], // <-- comments are nice
+    "data": [0, null, ["hello", "goodbye"]], // awesome 
     "quote": {
-      "O'Connor": "everything that rises must converge", // <- very forgiving :)
+      "O'Connor": "everything that rises must converge"
     }
   });
 
-  cout << foo["quote"]["O'Connor"];
+  cout << foo["quote"]["O'Connor"].string_value() << endl;
 }
 ```
 
-Or just pass a string in
+Or just pass a string in, use try catch if your involved in some risky business.
 ```
 auto foo = JSON(my_json_string);
-cout << foo;
+cout << foo << endl;
 ```
 
 # INCLUDE
@@ -42,6 +38,6 @@ Just link to the built binary (or modify and rebuild yourself).
 
 ```bash
 cd example
-g++ -o literal ./literal.cc -std=c++1y ./deps/json/lib/libjsoncpp.a
+g++ -O0 -std=c++1y ./example/literal.cc ./deps/json11/json11.cpp -o example
 ```
 
